@@ -20,13 +20,11 @@ grad = zeros(size(theta));
 % Note: grad should have the same dimensions as theta
 %
 
-
-
-
-
-
-
-
+% "theta" tiene que ser vertical (1x4) e "y" también
+J=sum(-y.*log(sigmoid(X*theta))-(1-y).*log(1-sigmoid(X*theta)))/m;
+%fprintf('calcula J: %d',J)
+grad=sum(((sigmoid(X*theta))-y).*X)/m;
+%fprintf('\n calcula grad: %d \n',grad)
 % =============================================================
 
 end

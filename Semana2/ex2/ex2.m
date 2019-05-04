@@ -69,7 +69,7 @@ initial_theta = zeros(n + 1, 1);
 fprintf('Cost at initial theta (zeros): %f\n', cost);
 fprintf('Expected cost (approx): 0.693\n');
 fprintf('Gradient at initial theta (zeros): \n');
-fprintf(' %f \n', grad);
+fprintf('print %f \n', grad);
 fprintf('Expected gradients (approx):\n -0.1000\n -12.0092\n -11.2628\n');
 
 % Compute and display cost and gradient with non-zero theta
